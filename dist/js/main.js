@@ -126,6 +126,59 @@ $(document).ready(function () {
     //         $(this).parent().find('>ul').slideToggle()
     //     });
 
+    // exam time counter
+    $.each($('.jquery-countdown'), function (index, value) {
+        // date format MM/DD/YYYY hh:mm:ss
+        const htmlTemplate = `
+            <div class="counter__item">
+                <div class="counter__item--number">%H</div>
+                <div class="counter__item--text">Hour</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__item--number">%M</div>
+                <div class="counter__item--text">Minute</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__item--number">%S</div>
+                <div class="counter__item--text">Second</div>
+            </div>
+		`;
+
+        const date = $(this).data('date');
+        console.log(date);
+        const counter = $(this).countdown(date, function (event) {
+            $(this).html(event.strftime(htmlTemplate));
+        });
+        counter.on('finish.countdown', () => {
+            // $('.options input, .question-buttons button').attr("disabled", true);
+            Swal.fire({
+                title: 'Time is up!',
+                icon: 'info',
+                showConfirmButton: false,
+            });
+            setTimeout(() => {
+                // location.replace('result.html');
+            }, 5000);
+        });
+    });
+
+    // toggle menu
+    $('.open-mobile-menu').on('click', function () {
+        $('.mobile-menu, .overlay').addClass('active');
+    });
+    $('.mobile-menu__close, .overlay').on('click', function () {
+        $('.mobile-menu, .overlay').removeClass('active');
+    });
+
+    // toggle search popup
+    $('.open-search-popup').on('click', function () {
+        $('.search-popup').addClass('active');
+    });
+    $('.search-popup__close').on('click', function () {
+        $('.search-popup').removeClass('active');
+    });
+
+
     // preloader
     $(".preloader").animate({
         top: '-100%'

@@ -31,15 +31,20 @@
     .container {
         @apply mx-auto px-3;
     }
+    .overlay {
+        @apply fixed top-0 left-0 right-0 bottom-0 z-[1] bg-slate-200/[90%] opacity-0 invisible;
+    }
+    .overlay.active {
+        @apply visible opacity-100;
+    }
     ::-webkit-scrollbar {
-        @apply w-2 h-1;
+        @apply w-3;
     }
     ::-webkit-scrollbar-track {
-
+        @apply bg-[#f1f1f1];
     }
     ::-webkit-scrollbar-thumb {
-        background-color: #ffffff55;
-        border-radius: 10px;
+        @apply bg-[#949494] rounded-[10px];
     }
 }
 
@@ -91,7 +96,7 @@
     /* input checkbox and radio */
     .theme-checkbox {
         --box-size: 20px;
-        @apply flex items-center relative cursor-pointer select-none mb-3;
+        @apply flex items-center relative cursor-pointer select-none;
     }
     .theme-checkbox__input {
         @apply hidden;
@@ -130,6 +135,25 @@
     .navbar__item {}
     .navbar__link {
         @apply text-gray-800 hover:text-gray-600 px-3 py-1;
+    }
+    .mobile-menu {
+        @apply fixed top-0 right-0 w-full max-w-[300px] h-full z-[2] bg-white/90 translate-x-full transition-all;
+    }
+    .mobile-menu__close {
+        @apply absolute top-3 right-[calc(100%+12px)] opacity-0 invisible transition-all;
+    }
+    .mobile-menu__list {
+        @apply pt-10 px-2;
+    }
+    .mobile-menu__item {}
+    .mobile-menu__link {
+        @apply py-2 px-5 block hover:bg-slate-100 rounded-md transition;
+    }
+    .mobile-menu.active {
+        @apply translate-x-0
+    }
+    .mobile-menu.active .mobile-menu__close {
+        @apply opacity-100 visible;
     }
     /* end navbar */
 
@@ -179,6 +203,9 @@
     .button--secondary.active {
         @apply bg-primary text-white;
     }
+    .button--tertiary {
+        @apply px-3 py-1 rounded-md bg-indigo-700 text-white text-sm font-medium hover:bg-indigo-600;
+    }
     /* end button */
 
     /* banner */
@@ -202,7 +229,10 @@
 
     }
     .subject__item {
-        @apply flex items-center rounded-lg border-2 p-1 h-full hover:border-primary hover:shadow-lg;
+        @apply flex items-center rounded-lg border-2 p-1 h-full cursor-pointer;
+    }
+    .subject__icon {
+        @apply h-[70px] w-[70px] rounded-full flex items-center justify-center text-2xl bg-primary text-white shadow-lg;
     }
     .subject__img {
         @apply max-w-[90px];
@@ -211,6 +241,13 @@
         @apply text-[16px] sm:text-[18px] font-bold capitalize;
     }
     .subject__text {}
+
+    .subject__item.active,
+    .subject__item:hover {
+        @apply border-primary shadow-lg
+    }
+
+    .subject__item.active .subject__title,
     .subject__item:hover .subject__title {
         @apply text-primary;
     }
@@ -222,13 +259,56 @@
     .social-media__item {
         @apply flex items-center justify-center h-[35px] w-[35px] rounded-lg bg-gray-500 text-white hover:bg-primary;
     }
+
+    /* search popup */
+    .search-popup {
+        @apply bg-slate-100/[98] fixed top-0 left-0 right-0 bottom-0 z-[2] overflow-auto flex items-center justify-center opacity-0 invisible transition;
+    }
+    .search-popup__form {
+        @apply flex max-w-[410px] p-5 w-full;
+    }
+    .search-popup__input {
+        /* @apply ; */
+    }
+    .search-popup__close {
+        @apply absolute top-3 right-3
+    }
+    .search-popup.active {
+        @apply visible opacity-100;
+    }
+
+    /* time counter */
+    .exam-timer {
+        @apply mb-4 fixed top-[80px] right-1/2 md:right-[20px] translate-x-1/2 md:translate-x-0;
+    }
+    .counter {
+        @apply flex justify-center lg:justify-end;
+    }
+    .counter__item {
+        @apply mx-1 rounded-md overflow-hidden min-w-[60px] text-center shadow-lg;
+    }
+    .counter__item--number {
+        @apply text-base text-[#333] bg-[#fff] p-[2px];
+    }
+    .counter__item--text {
+        @apply text-xs bg-indigo-700 text-white font-medium p-[2px];
+    }
+    /* end time counter */
+
+    /* quiz page */
+    .container-box {
+        @apply mx-auto w-full max-w-[500px] lg:max-w-[700px] min-h-[200px] bg-white rounded-lg p-5 transition-all shadow-lg;
+    }
+    .container-box--small {
+        @apply max-w-[500px];
+    }
 }
 
 @layer utilities {
     .section-padding, .section-padding-y, .section-padding-t {
-        @apply pt-[50px];
+        @apply pt-[80px];
     }
     .section-padding, .section-padding-y, .section-padding-b {
-        @apply pb-[50px];
+        @apply pb-[80px];
     }
 }

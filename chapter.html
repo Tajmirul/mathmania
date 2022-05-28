@@ -1,0 +1,352 @@
+<!-- 
+    Theme:      Online Exam
+    Made By:    Tajmirul Islam Akhand 
+    contact:    tasmirolislam@gmail.com
+    facebook:   https://facebook.com/akhand.tajmirul
+-->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Site Title Here</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="dist/img/favi.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- fonts (Merriweather, Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ALL CSS -->
+    <link rel="stylesheet" href="dist/css/slick.css">
+    <link rel="stylesheet" href="dist/css/slick-theme.css">
+    <link rel="stylesheet" href="dist/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="dist/css/tailwind.css">
+</head>
+
+<body>
+
+    <!-- <div class="go-to-top"><i class="icofont-rounded-up"></i></div> -->
+    <!-- go to top button -->
+    <div class="preloader"><img src="dist/img/loading.gif" alt=""></div>
+    <!-- end of preloader -->
+
+    <header>
+        <nav class="navbar py-3">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <a href="index.html"><img src="dist/img/logo.png" alt="" class="navbar__logo max-h-[40px]"></a>
+
+                        <ul class="navbar__list ml-10 hidden md:flex">
+                            <li class="navbar__item"><a href="#" class="navbar__link">HOME</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">BLOG</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">FORUM</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex space-x-2">
+                        <!-- <form action="" class="search-box active">
+                            <input type="text" class="search-box__input" placeholder="Type To Search ...">
+                            <button type="submit" class="search-box__btn button button--icon"><i class="far fa-search"></i></button>
+                        </form> -->
+                        <button class="button button--icon open-search-popup"><i class="far fa-search"></i></button>
+                        <button class="button button--icon open-mobile-menu md:hidden"><i
+                                class="far fa-bars"></i></button>
+                        <a href="" class="button button--secondary active hidden md:inline-block">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- start banner -->
+        <section class="banner-section">
+            <div class="banner" style="background-image: url(dist/img/banner/banner-1.jpg);">
+                <div class="container">
+                    <div class="flex justify-center items-center h-[200px]">
+                        <div class="banner__text">
+                            <h1 class="banner__title text-3xl">বাংলাভাষা ও সাহিত্য </h1>
+                            <div class="flex justify-center">
+                                <a href="index.html">Home</a>
+                                <span class="mx-3"> / </span>
+                                <a href="">বাংলাভাষা ও সাহিত্য</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end::banner -->
+
+        <!-- start::lessons section -->
+        <section class="lessons-section section-padding">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-span-4 space-y-4">
+                        <div class="subject__item h-auto active">
+                            <img src="dist/img/icon/bangla.png" alt="" class="subject__img">
+                            <div class="ml-3">
+                                <h4 class="subject__title">প্রাচীন যুগ - ২ </h4>
+                                <div class="subject__text">মোট প্রশ্ন - ১৪৫</div>
+                            </div>
+                        </div>
+                        <div class="subject__item h-auto">
+                            <img src="dist/img/icon/bangla.png" alt="" class="subject__img">
+                            <div class="ml-3">
+                                <h4 class="subject__title">মধ্যযুগ - ৩</h4>
+                                <div class="subject__text">মোট প্রশ্ন - ১৪৫</div>
+                            </div>
+                        </div>
+                        <div class="subject__item h-auto">
+                            <img src="dist/img/icon/bangla.png" alt="" class="subject__img">
+                            <div class="ml-3">
+                                <h4 class="subject__title">আধুনিক জগ - ১০</h4>
+                                <div class="subject__text">মোট প্রশ্ন - ১৪৫</div>
+                            </div>
+                        </div>
+                        <div class="subject__item h-auto">
+                            <img src="dist/img/icon/bangla.png" alt="" class="subject__img">
+                            <div class="ml-3">
+                                <h4 class="subject__title">ব্যাকরণ - ১৫</h4>
+                                <div class="subject__text">মোট প্রশ্ন - ১৪৫</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-8">
+                        <table class="w-full">
+                            <thead class="bg-gray-700 text-gray-200 rounded-md overflow-hidden">
+                                <tr>
+                                    <td class="px-4 py-3 rounded-l-lg">Topic</td>
+                                    <td class="px-4 py-3">Questions</td>
+                                    <td class="px-4 py-3 rounded-r-lg"><br></td>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-2">ণ-ত্ব ষ-ত্ব বিধান</td>
+                                    <td class="px-4 py-2"><span class="w-8 h-8 rounded-md inline-flex items-center justify-center bg-primary text-white">21</span></td>
+                                    <td class="px-4 py-2 flex justify-end space-x-2">
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Practice
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Quiz
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-book mr-2"></i>
+                                            Read Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">ক্রিয়ার কাল</td>
+                                    <td class="px-4 py-2"><span class="w-8 h-8 rounded-md inline-flex items-center justify-center bg-primary text-white">21</span></td>
+                                    <td class="px-4 py-2 flex justify-end space-x-2">
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Practice
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Quiz
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-book mr-2"></i>
+                                            Read Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">বানান</td>
+                                    <td class="px-4 py-2"><span class="w-8 h-8 rounded-md inline-flex items-center justify-center bg-primary text-white">21</span></td>
+                                    <td class="px-4 py-2 flex justify-end space-x-2">
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Practice
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Quiz
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-book mr-2"></i>
+                                            Read Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">লিঙ্গ</td>
+                                    <td class="px-4 py-2"><span class="w-8 h-8 rounded-md inline-flex items-center justify-center bg-primary text-white">21</span></td>
+                                    <td class="px-4 py-2 flex justify-end space-x-2">
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Practice
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Quiz
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-book mr-2"></i>
+                                            Read Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">সমার্থক শব্দ</td>
+                                    <td class="px-4 py-2"><span class="w-8 h-8 rounded-md inline-flex items-center justify-center bg-primary text-white">21</span></td>
+                                    <td class="px-4 py-2 flex justify-end space-x-2">
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Practice
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Quiz
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-book mr-2"></i>
+                                            Read Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">বিপরীত শব্দ</td>
+                                    <td class="px-4 py-2"><span class="w-8 h-8 rounded-md inline-flex items-center justify-center bg-primary text-white">21</span></td>
+                                    <td class="px-4 py-2 flex justify-end space-x-2">
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Practice
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-edit mr-2"></i>
+                                            Start Quiz
+                                        </a>
+                                        <a href="#" class="py-1 px-2 hover:text-primary">
+                                            <i class="far fa-book mr-2"></i>
+                                            Read Details
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end::lessons section -->
+    </main>
+
+    <footer class="footer-section bg-gray-700 section-padding-t text-gray-400 text-sm">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-y-6 md:gap-10">
+                <div class="col-span-12 md:col-span-4">
+                    <img src="dist/img/logo-light.png" alt="" class="mb-5 max-w-[220px]">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                </div>
+                <div class="col-span-6 md:col-span-2">
+                    <h3 class="font-bold text-lg mb-4 text-gray-300">কোম্পানি</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#">ক্যারিয়ার</a></li>
+                        <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                        <li><a href="#">রিফান্ড পলিসি</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-6 md:col-span-2">
+                    <h3 class="font-bold text-lg mb-4 text-gray-300">অন্যান্য</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#">ব্লগ</a></li>
+                        <li><a href="#">অ্যাফিলিয়েট হতে চাইলে</a></li>
+                        <li><a href="#">ক্র্যাশ কোর্স</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <h3 class="font-bold text-lg mb-4 text-gray-300">যোগাযোগ মাধ্যম</h3>
+
+                    <div>
+                        Contact: 16910 (8AM - 11PM) <br>
+                        Phone: <a href="tel:+880173035465">+880173035465</a> <br>
+                        Email: <a href="mailto:support@mathmenia.com">support@mathmenia.com</a>
+
+                        <div class="social-media mt-5">
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright bg-gray-800 py-4 mt-5 text-center px-5">স্বত্ব © ২০১৫-২০২২ Mathmenia কতৃক সর্বস্বত্ব
+            সংরক্ষিত</div>
+    </footer>
+
+    <!-- start::search popup -->
+    <div class="search-popup">
+        <button type="button" class="button button--icon search-popup__close"><i class="far fa-times"></i></button>
+        <form action="" method="get" class="search-popup__form">
+            <div class="nice-form flex-grow">
+                <input type="text" class="nice-form__input search-popup__input" placeholder="Search Here">
+                <span class="nice-form__prepend">Search Here</span>
+            </div>
+
+            <button type="submit" class="search-popup__button button button--icon border-transparent h-auto ml-3">
+                <i class="far fa-search"></i>
+            </button>
+        </form>
+    </div>
+    <!-- end::search popup -->
+
+    <div class="mobile-menu">
+        <button type="button"
+            class="mobile-menu__close button button--icon rounded-full text-white bg-red-600 hover:bg-red-400"><i
+                class="far fa-times"></i></button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Blog</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Forum</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="overlay"></div>
+
+
+    <!-- ALL JS -->
+    <script src="dist/js/jquery-3.5.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="dist/js/jquery.countdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>
