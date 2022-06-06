@@ -145,7 +145,6 @@ $(document).ready(function () {
 		`;
 
         const date = $(this).data('date');
-        console.log(date);
         const counter = $(this).countdown(date, function (event) {
             $(this).html(event.strftime(htmlTemplate));
         });
