@@ -82,105 +82,111 @@
     </header>
 
     <main>
-        <!-- start::blog details section -->
-        <section class="blog-details-section section-padding-b pt-5">
+        <section>
+            <!-- start::banner section -->
+            <div class="banner banner--small text-center"
+                style="background-image: url(dist/img/banner/banner-1.jpg);">
+                <div class="flex items-center h-[300px] px-4">
+                    <div class="banner__text mx-auto">
+                        <h1 class="banner__title text-2xl sm:text-3xl md:text-4xl">All Blogs</h1>
+                        <p class="banner__desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                            dolorum, molestias assumenda veritatis praesentium odit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end::banner section -->
+        </section>
+
+        <!-- start::all blogs -->
+        <section class="blogs-section section-padding">
             <div class="container">
-                <div class="w-full max-w-[940px] mx-auto border border-gray-400 p-5 md:p-10 lg:p-[60px]">
-                    <div class="flex justify-between items-center text-sm">
-                        <div class="space-x-3 flex items-center flex-row">
-                            <img src="dist/img/man.png" alt="" class="max-w-[32px] aspect-square">
-                            <a href="#" class="hover:text-primary">ashifur109</a>
-                            <span>Apr 26</span>
-                            <span class="hidden sm:inline-block">9 min read</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+                    <div class="blog rounded-md overflow-hidden border-2 border-gray-100 hover:shadow-md">
+                        <div class="blog__img mb-2">
+                            <a href="#"><img src="dist/img/blog/blog-1.jpg" alt="" class="aspect-[1.66/1]"></a>
                         </div>
-                    </div>
+                        <div class="p-3">
+                            <div class="blog__meta text-sm">April 10, 2022, 10 Minutes Read</div>
+                            <h3 class="blog__heading text-lg font-bold my-1"><a href="blog-details.html">সহকারী শিক্ষক নিয়োগ পরীক্ষা ২০২২</a></h3>
+                            <p class="line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, in? </p>
 
-                    <div class="text-center mt-10">
-                        <h1 class="text-2xl md:text-4xl mb-4">সহকারী শিক্ষক নিয়োগ পরীক্ষা ২০২২</h1>
-                        <p class="md:text-lg">
-                            সময়-৬০ মিনিট। পূর্ণমান-৮০ <br>
-                            [প্রতিটি প্রশ্নের মান ১। প্রতিটি ভুল উত্তরের জন্য ০.২৫ নম্বর কাটা হবে।] <br>
-                            <strong>সেট কোড: ৩০৭১</strong>
-                        </p>
-                        <p class="text-xl md:text-3xl">
-                            Primary Question Solution 2022 <br>
-                            Exam Date: 22.04.2022 <br>
-                            Post : Assistant Teacher
-                        </p>
-                    </div>
+                            <div class="border-t-2 border-gray-100 mt-3"></div>
+                            <div class="flex justify-between text-sm pt-3">
+                                <div class="space-x-3">
+                                    <a href="#"><i class="fas fa-eye"></i> 234</a>
+                                    <a href="#"><i class="fas fa-comment"></i> 54</a>
+                                </div>
 
-                    <div class="border-b border-gray-800 my-10"></div>
+                                <a href="#" class=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog rounded-md overflow-hidden border-2 border-gray-100 hover:shadow-md">
+                        <div class="blog__img mb-2">
+                            <a href="#"><img src="dist/img/blog/blog-2.jpg" alt="" class="aspect-[1.66/1]"></a>
+                        </div>
+                        <div class="p-3">
+                            <div class="blog__meta text-sm">April 10, 2022, 10 Minutes Read</div>
+                            <h3 class="blog__heading text-lg font-bold my-1"><a href="blog-details.html">সহকারী শিক্ষক নিয়োগ পরীক্ষা ২০২২</a></h3>
+                            <p class="line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, in?</p>
 
-                    <div class="space-y-4 md:text-lg leading-[175%] mb-10">
-                        <div>
-                            ১। If the price is low, demand ___ <br>
-                            (ক) will be increased <br>
-                            (খ) will increase <br>
-                            (গ) is increased <br>
-                            (ঘ) would be increased <br>
-                            উত্তরঃ (খ) will increase
-                        </div>
-                        <div>
-                            ২। 2x = 3y + 5 হলে 4x – 6y = কত? <br>
-                            (ক) 10 <br>
-                            (খ) 15 <br>
-                            (গ) 20 <br>
-                            (ঘ) 12 <br>
-                            উত্তরঃ (ক) 10
-                        </div>
-                        <div>
-                            ৪। ‘সকালে উঠিয়া আমি মনে মনে বলি, সারাদিন আমি যেন ভাল হয়ে চলি’-পঙতিটি কার? <br>
-                            (ক) মদনমোহন তর্কালংকার <br>
-                            (খ) কালিপ্রসন্ন সিংহ <br>
-                            (গ) ঈশ্বরচন্দ্র বিদ্যাসাগর <br>
-                            (ঘ) অক্ষয়কুমার দত্ত <br>
-                            উত্তরঃ (ক) মদনমোহন তর্কালংকার
-                        </div>
-                        <div>
-                            ৬। ভৌগোলিক নির্দেশক (GI) পণ্য হিসেবে কবে বাংলাদেশের ইলিশ সনদপ্রাপ্ত হয়? <br>
-                            (ক) ১৭ আগস্ট ২০১৭ (খ) ২৭ জানুয়ারি ২০১৯(গ) ১৭ জুন ২০২১ (ঘ) ১৭ নভেম্বর ২০১৬ <br>
-                            উত্তরঃ (ক) ১৭ আগস্ট ২০১৭
-                        </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-                        <a href="#" class="px-3 py-2 text-sm border border-gray-700 hover:border-gray-400">Primary
-                            Question Solution 2022</a>
-                        <a href="#" class="px-3 py-2 text-sm border border-gray-700 hover:border-gray-400">সহকারী শিক্ষক
-                            নিয়োগ পরীক্ষা ২০২২</a>
-                        <a href="#" class="px-3 py-2 text-sm border border-gray-700 hover:border-gray-400">Primary
-                            assistant teacher exam 2022</a>
-                    </div>
+                            <div class="border-t-2 border-gray-100 mt-3"></div>
+                            <div class="flex justify-between text-sm pt-3">
+                                <div class="space-x-3">
+                                    <a href="#"><i class="fas fa-eye"></i> 234</a>
+                                    <a href="#"><i class="fas fa-comment"></i> 54</a>
+                                </div>
 
-                    <div class="flex items-center justify-between mt-10 py-4 border-y border-gray-300 text-sm">
-                        <div class="space-x-3 text-lg">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="far fa-link"></i></a>
-                        </div>
-                        <div>
-                            <a href="#">PRIMARY TEACHER EXAM</a>
+                                <a href="#" class=""><i class="far fa-heart"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex items-center justify-between pt-4 text-sm">
-                        <div class="space-x-5">
-                            <span>30 Views</span>
-                            <span>5 Comments</span>
+                    <div class="blog rounded-md overflow-hidden border-2 border-gray-100 hover:shadow-md">
+                        <div class="blog__img mb-2">
+                            <a href="#"><img src="dist/img/blog/blog-3.jpg" alt="" class="aspect-[1.66/1]"></a>
                         </div>
-                        <div>
-                            <a href="#" class="text-orange-600 text-lg"><i class="far fa-heart"></i></a>
+                        <div class="p-3">
+                            <div class="blog__meta text-sm">April 10, 2022, 10 Minutes Read</div>
+                            <h3 class="blog__heading text-lg font-bold my-1"><a href="blog-details.html">সহকারী শিক্ষক নিয়োগ পরীক্ষা ২০২২</a></h3>
+                            <p class="line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, in?</p>
+
+                            <div class="border-t-2 border-gray-100 mt-3"></div>
+                            <div class="flex justify-between text-sm pt-3">
+                                <div class="space-x-3">
+                                    <a href="#"><i class="fas fa-eye"></i> 234</a>
+                                    <a href="#"><i class="fas fa-comment"></i> 54</a>
+                                </div>
+
+                                <a href="#" class=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog rounded-md overflow-hidden border-2 border-gray-100 hover:shadow-md">
+                        <div class="blog__img mb-2">
+                            <a href="#"><img src="dist/img/blog/blog-2.jpg" alt="" class="aspect-[1.66/1]"></a>
+                        </div>
+                        <div class="p-3">
+                            <div class="blog__meta text-sm">April 10, 2022, 10 Minutes Read</div>
+                            <h3 class="blog__heading text-lg font-bold my-1"><a href="#">সহকারী শিক্ষক নিয়োগ  পরীক্ষা ২০২২</a></h3>
+                            <p class="line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, in?</p>
+
+                            <div class="border-t-2 border-gray-100 mt-3"></div>
+                            <div class="flex justify-between text-sm pt-3">
+                                <div class="space-x-3">
+                                    <a href="#"><i class="fas fa-eye"></i> 234</a>
+                                    <a href="#"><i class="fas fa-comment"></i> 54</a>
+                                </div>
+
+                                <a href="#" class=""><i class="far fa-heart"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="w-full max-w-[940px] mx-auto border border-gray-400 px-5 py-2 md:px-10 md:py-3 lg:px-[60px] lg:py-8 mt-4">
-                    <h5 class="font-poppins font-light">Comments</h5>
-                    </div> -->
-
-            </div>
             </div>
         </section>
-        <!-- end::blog details section -->
+        <!-- end::all blogs -->
     </main>
 
     <footer class="footer-section bg-gray-700 section-padding-t text-gray-400 text-sm">

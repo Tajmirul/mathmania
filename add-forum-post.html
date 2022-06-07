@@ -73,7 +73,7 @@
         <section class="section-padding">
             <div class="container">
                 <div class="max-w-[800px] mx-auto">
-                    <div class="flex items-center justify-between flex-col md:flex-row mb-5">
+                    <div class="flex items-center justify-between flex-col md:flex-row mb-5 border-b pb-4">
                         <div class="space-x-3">
                             <a href="#">All Post</a>
                             <a href="#">My Post</a>
@@ -83,62 +83,25 @@
                             <input type="text" class="border-0 outline-none px-2 py-1">
                         </div>
                     </div>
-                    <div class="banner banner--small rounded-lg text-center"
-                        style="background-image: url(dist/img/banner/banner-1.jpg);">
-                        <div class="flex items-center h-[300px] px-4">
-                            <div class="banner__text mx-auto">
-                                <h1 class="banner__title text-2xl sm:text-3xl md:text-4xl">Educavo University</h1>
-                                <p class="banner__desc">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-                                    dolorum, molestias assumenda veritatis praesentium odit.
-                                </p>
-                            </div>
+                    
+                    <form action="" class="space-y-3">
+                        <div class="nice-form max-w-[300px]">
+                            <select name="" id="" class="nice-form__input">
+                                <option value="">Education Forum</option>
+                            </select>
+                            <label class="nice-form__prepend">Education Forum</label>
                         </div>
-                    </div>
-
-
-                    <div class="table-responsive overflow-x-auto overflow-y-hidden">
-                        <table class="table-auto w-full min-w-[700px] border mt-10">
-                            <tbody>
-                                <tr class="border-b">
-                                    <td colspan="6" class="py-2 px-3 text-right">
-                                        <a href="#"
-                                            class="text-sm bg-slate-700 text-gray-100 px-3 py-2 inline-block hover:bg-slate-600">Create
-                                            New Post</a>
-                                    </td>
-                                </tr>
-                                <tr class="border-b">
-                                    <td class="py-2 px-3"></td>
-                                    <td class="py-2 px-3"><i class="far fa-comment text-lg"></i></td>
-                                    <td class="py-2 px-3"><i class="far fa-heart text-lg"></i></td>
-                                    <td class="py-2 px-3"><i class="far fa-eye text-lg"></i></td>
-                                    <td class="py-2 px-3">Recent Activities</td>
-                                </tr>
-                                <tr class="border-b">
-                                    <td class="py-2 px-3">
-                                        <a href="forum-details.html">Welcome to the Education Forum <br>
-                                            <span class="text-sm">ashifur109</span>
-                                        </a>
-                                    </td>
-                                    <td class="py-2 px-3">0</td>
-                                    <td class="py-2 px-3">0</td>
-                                    <td class="py-2 px-3">0</td>
-                                    <td class="py-2 px-3">Apr 10</td>
-                                </tr>
-                                <tr class="border-b">
-                                    <td class="py-2 px-3">
-                                        <a href="forum-details.html">PRIMARY EXAM 2022 SOLUTION<br>
-                                            <span class="text-sm">ashifur109</span>
-                                        </a>
-                                    </td>
-                                    <td class="py-2 px-3">234</td>
-                                    <td class="py-2 px-3">32</td>
-                                    <td class="py-2 px-3">2</td>
-                                    <td class="py-2 px-3">June 30</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <div class="nice-form">
+                            <input type="text" class="nice-form__input" name="" placeholder="Title">
+                            <label class="nice-form__prepend">Title</label>
+                        </div>
+                        <div>
+                            <textarea name="" id="" rows="7" class="nice-form__input"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button--primary">Publish</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

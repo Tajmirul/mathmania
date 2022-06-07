@@ -7,467 +7,428 @@
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <title>Site Title Here</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link
-            rel="shortcut icon"
-            type="image/x-icon"
-            href="dist/img/favi.png"
-        />
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Site Title Here</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- fonts (Merriweather, Poppins) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="shortcut icon" type="image/x-icon" href="dist/img/favi.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-        <!-- ALL CSS -->
-        <link rel="stylesheet" href="dist/css/slick.css" />
-        <link rel="stylesheet" href="dist/css/slick-theme.css" />
-        <link rel="stylesheet" href="dist/css/all.min.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-        />
-        <link rel="stylesheet" href="dist/css/tailwind.css" />
-    </head>
+    <!-- fonts (Merriweather, Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
 
-    <body>
-        <!-- <div class="go-to-top"><i class="icofont-rounded-up"></i></div> -->
-        <!-- go to top button -->
-        <div class="preloader"><img src="dist/img/loading.gif" alt="" /></div>
-        <!-- end of preloader -->
+    <!-- ALL CSS -->
+    <link rel="stylesheet" href="dist/css/slick.css" />
+    <link rel="stylesheet" href="dist/css/slick-theme.css" />
+    <link rel="stylesheet" href="dist/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="dist/css/tailwind.css" />
+</head>
 
-        <header>
-            <nav class="navbar py-3">
-                <div class="container mx-auto">
-                    <div class="flex justify-between items-center">
-                        <div class="flex">
-                            <a href="index.html"
-                                ><img
-                                    src="dist/img/logo.png"
-                                    alt=""
-                                    class="navbar__logo max-h-[40px]"
-                            /></a>
+<body>
+    <!-- <div class="go-to-top"><i class="icofont-rounded-up"></i></div> -->
+    <!-- go to top button -->
+    <div class="preloader"><img src="dist/img/loading.gif" alt="" /></div>
+    <!-- end of preloader -->
 
-                            <ul class="navbar__list ml-10 hidden md:flex">
-                                <li class="navbar__item">
-                                    <a href="index.html" class="navbar__link">HOME</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="blog-details.html" class="navbar__link">BLOG</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="forum.html" class="navbar__link">FORUM</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="contact.html" class="navbar__link">CONTACT</a>
-                                </li>
-                            </ul>
-                        </div>
+    <header>
+        <nav class="navbar py-3">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <a href="index.html"><img src="dist/img/logo.png" alt=""
+                                class="navbar__logo max-h-[40px]" /></a>
 
-                        <div class="flex space-x-2">
-                            <!-- <form action="" class="search-box active">
+                        <ul class="navbar__list ml-10 hidden md:flex">
+                            <li class="navbar__item">
+                                <a href="index.html" class="navbar__link">HOME</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="blogs.html" class="navbar__link">BLOG</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="forum.html" class="navbar__link">FORUM</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="contact.html" class="navbar__link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex space-x-2">
+                        <!-- <form action="" class="search-box active">
                             <input type="text" class="search-box__input" placeholder="Type To Search ...">
                             <button type="submit" class="search-box__btn button button--icon"><i class="far fa-search"></i></button>
                         </form> -->
-                            <button
-                                class="button button--icon open-search-popup"
-                            >
-                                <i class="far fa-search"></i>
-                            </button>
-                            <button
-                                class="button button--icon open-mobile-menu md:hidden"
-                            >
-                                <i class="far fa-bars"></i>
-                            </button>
-                            <a
-                                href=""
-                                class="button button--secondary active hidden md:inline-block"
-                                >Login</a
-                            >
-                        </div>
+                        <button class="button button--icon open-search-popup">
+                            <i class="far fa-search"></i>
+                        </button>
+                        <button class="button button--icon open-mobile-menu md:hidden">
+                            <i class="far fa-bars"></i>
+                        </button>
+                        <a href="" class="button button--secondary active hidden md:inline-block">Login</a>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            <!-- start banner -->
-            <section class="banner-section">
-                <div
-                    class="banner"
-                    style="background-image: url(dist/img/banner/banner-1.jpg);"
-                >
-                    <div class="container">
-                        <div class="flex justify-center items-center h-[200px]">
-                            <div class="banner__text">
-                                <h1 class="banner__title text-3xl">
-                                    বাংলাভাষা ও সাহিত্য
-                                </h1>
-                                <div class="flex justify-center">
-                                    <a href="index.html">Home</a>
-                                    <span class="mx-3"> / </span>
-                                    <a href="">বাংলাভাষা ও সাহিত্য</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- end::banner -->
-
-            <!-- start::lessons section -->
-            <section class="lessons-section section-padding">
+    <main>
+        <!-- start banner -->
+        <section class="banner-section">
+            <div class="banner" style="background-image: url(dist/img/banner/banner-1.jpg);">
                 <div class="container">
-                    <div class="grid grid-cols-12 gap-6">
-                        <div class="col-span-4 space-y-4">
-                            <div class="subject__item p-3 h-auto active">
-                                <div class="subject__icon">1</div>
-                                <div class="ml-3">
-                                    <h4 class="subject__title">
-                                        প্রাচীন যুগ - ২
-                                    </h4>
-                                    <div class="subject__text">
-                                        মোট প্রশ্ন - ১৪৫
-                                    </div>
-                                </div>
+                    <div class="flex justify-center items-center h-[200px]">
+                        <div class="banner__text">
+                            <h1 class="banner__title text-3xl">
+                                বাংলাভাষা ও সাহিত্য
+                            </h1>
+                            <div class="flex justify-center">
+                                <a href="index.html">Home</a>
+                                <span class="mx-3"> / </span>
+                                <a href="">বাংলাভাষা ও সাহিত্য</a>
                             </div>
-                            <div class="subject__item p-3 h-auto">
-                                <div class="subject__icon">2</div>
-                                <div class="ml-3">
-                                    <h4 class="subject__title">
-                                        প্রাচীন যুগ - ২
-                                    </h4>
-                                    <div class="subject__text">
-                                        মোট প্রশ্ন - ১৪৫
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="subject__item p-3 h-auto">
-                                <div class="subject__icon">3</div>
-                                <div class="ml-3">
-                                    <h4 class="subject__title">
-                                        প্রাচীন যুগ - ২
-                                    </h4>
-                                    <div class="subject__text">
-                                        মোট প্রশ্ন - ১৪৫
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="subject__item p-3 h-auto">
-                                <div class="subject__icon">4</div>
-                                <div class="ml-3">
-                                    <h4 class="subject__title">
-                                        প্রাচীন যুগ - ২
-                                    </h4>
-                                    <div class="subject__text">
-                                        মোট প্রশ্ন - ১৪৫
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="subject__item p-3 h-auto">
-                                <div class="subject__icon">5</div>
-                                <div class="ml-3">
-                                    <h4 class="subject__title">
-                                        প্রাচীন যুগ - ২
-                                    </h4>
-                                    <div class="subject__text">
-                                        মোট প্রশ্ন - ১৪৫
-                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end::banner -->
+
+        <!-- start::lessons section -->
+        <section class="lessons-section section-padding">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-3 md:gap-6">
+                    <div class="col-span-12 md:col-span-4 space-y-4">
+                        <div class="subject__item p-3 h-auto active">
+                            <div class="subject__icon">1</div>
+                            <div class="ml-3">
+                                <h4 class="subject__title">
+                                    প্রাচীন যুগ - ২
+                                </h4>
+                                <div class="subject__text">
+                                    মোট প্রশ্ন - ১৪৫
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-span-8">
-                            <ul
-                                class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
-                                id="tabs-tab"
-                                role="tablist"
-                            >
-                                <li class="nav-item" role="presentation">
-                                    <a
-                                        href="#tabs-exam-based"
-                                        class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active"
-                                        id="tabs-exam-based-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#tabs-exam-based"
-                                        role="tab"
-                                        aria-controls="tabs-exam-based"
-                                        aria-selected="true"
-                                        >পরীক্ষা ভিত্তিক</a
-                                    >
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a
-                                        href="#tabs-year-based"
-                                        class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
-                                        id="tabs-year-based-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#tabs-year-based"
-                                        role="tab"
-                                        aria-controls="tabs-year-based"
-                                        aria-selected="false"
-                                        >সাল ভিত্তিক </a
-                                    >
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="tabs-tabContent">
-                                <div
-                                    class="tab-pane fade show active"
-                                    id="tabs-exam-based"
-                                    role="tabpanel"
-                                    aria-labelledby="tabs-exam-based-tab"
-                                >
-                                    <div class="grid grid-cols-2 gap-5">
-                                        <div class="subject__item p-3 h-auto">
-                                            <div class="subject__icon">1</div>
-                                            <div class="ml-3">
-                                                <h4 class="subject__title">
-                                                    Bangladesh Krishi Bank
-                                                </h4>
-                                                <div class="subject__text">
-                                                    মােট প্রশ্ন 1355 টি
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject__item p-3 h-auto">
-                                            <div class="subject__icon">2</div>
-                                            <div class="ml-3">
-                                                <h4 class="subject__title">
-                                                    Rupali Bank Ltd
-                                                </h4>
-                                                <div class="subject__text">
-                                                    মােট প্রশ্ন 1355 টি
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject__item p-3 h-auto">
-                                            <div class="subject__icon">3</div>
-                                            <div class="ml-3">
-                                                <h4 class="subject__title">
-                                                    Janata Bank Ltd
-                                                </h4>
-                                                <div class="subject__text">
-                                                    মােট প্রশ্ন 1355 টি
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="subject__item p-3 h-auto">
-                                            <div class="subject__icon">4</div>
-                                            <div class="ml-3">
-                                                <h4 class="subject__title">
-                                                    Bangladesh Bank
-                                                </h4>
-                                                <div class="subject__text">
-                                                    মােট প্রশ্ন 1355 টি
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="subject__item p-3 h-auto">
+                            <div class="subject__icon">2</div>
+                            <div class="ml-3">
+                                <h4 class="subject__title">
+                                    প্রাচীন যুগ - ২
+                                </h4>
+                                <div class="subject__text">
+                                    মোট প্রশ্ন - ১৪৫
                                 </div>
-                                <div
-                                    class="tab-pane fade"
-                                    id="tabs-year-based"
-                                    role="tabpanel"
-                                    aria-labelledby="tabs-year-based-tab"
-                                >
-                                <div class="grid grid-cols-2 gap-5">
-                                    <div class="subject__item p-3 h-auto">
-                                        <div class="subject__icon">4</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">
-                                                Bangladesh Bank
-                                            </h4>
-                                            <div class="subject__text">
-                                                মােট প্রশ্ন 1355 টি
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto">
-                                        <div class="subject__icon">2</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">
-                                                Rupali Bank Ltd
-                                            </h4>
-                                            <div class="subject__text">
-                                                মােট প্রশ্ন 1355 টি
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto">
+                            </div>
+                        </div>
+                        <div class="subject__item p-3 h-auto">
+                            <div class="subject__icon">3</div>
+                            <div class="ml-3">
+                                <h4 class="subject__title">
+                                    প্রাচীন যুগ - ২
+                                </h4>
+                                <div class="subject__text">
+                                    মোট প্রশ্ন - ১৪৫
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subject__item p-3 h-auto">
+                            <div class="subject__icon">4</div>
+                            <div class="ml-3">
+                                <h4 class="subject__title">
+                                    প্রাচীন যুগ - ২
+                                </h4>
+                                <div class="subject__text">
+                                    মোট প্রশ্ন - ১৪৫
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subject__item p-3 h-auto">
+                            <div class="subject__icon">5</div>
+                            <div class="ml-3">
+                                <h4 class="subject__title">
+                                    প্রাচীন যুগ - ২
+                                </h4>
+                                <div class="subject__text">
+                                    মোট প্রশ্ন - ১৪৫
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-8">
+                        <ul class="nav nav-tabs flex flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
+                            id="tabs-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#tabs-exam-based"
+                                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active"
+                                    id="tabs-exam-based-tab" data-bs-toggle="pill" data-bs-target="#tabs-exam-based"
+                                    role="tab" aria-controls="tabs-exam-based" aria-selected="true">পরীক্ষা ভিত্তিক</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#tabs-year-based"
+                                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+                                    id="tabs-year-based-tab" data-bs-toggle="pill" data-bs-target="#tabs-year-based"
+                                    role="tab" aria-controls="tabs-year-based" aria-selected="false">সাল ভিত্তিক </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tabs-tabContent">
+                            <div class="tab-pane fade show active" id="tabs-exam-based" role="tabpanel"
+                                aria-labelledby="tabs-exam-based-tab">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
                                         <div class="subject__icon">1</div>
                                         <div class="ml-3">
-                                            <h4 class="subject__title">
-                                                Bangladesh Krishi Bank
-                                            </h4>
-                                            <div class="subject__text">
-                                                মােট প্রশ্ন 1355 টি
-                                            </div>
+                                            <h4 class="subject__title">Bangladesh Krishi Bank</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                         </div>
                                     </div>
-                                    <div class="subject__item p-3 h-auto">
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
+                                        <div class="subject__icon">2</div>
+                                        <div class="ml-3">
+                                            <h4 class="subject__title">Rupali Bank Ltd</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                        </div>
+                                    </div>
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
                                         <div class="subject__icon">3</div>
                                         <div class="ml-3">
-                                            <h4 class="subject__title">
-                                                Janata Bank Ltd
-                                            </h4>
-                                            <div class="subject__text">
-                                                মােট প্রশ্ন 1355 টি
-                                            </div>
+                                            <h4 class="subject__title">Janata Bank Ltd</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                        </div>
+                                    </div>
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
+                                        <div class="subject__icon">4</div>
+                                        <div class="ml-3">
+                                            <h4 class="subject__title">Bangladesh Bank</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-year-based" role="tabpanel"
+                                aria-labelledby="tabs-year-based-tab">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                        <div class="subject__icon">4</div>
+                                        <div class="ml-3">
+                                            <h4 class="subject__title">Bangladesh Bank</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                        </div>
+                                    </div>
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                        <div class="subject__icon">2</div>
+                                        <div class="ml-3">
+                                            <h4 class="subject__title">Rupali Bank Ltd</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                        </div>
+                                    </div>
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                        <div class="subject__icon">1</div>
+                                        <div class="ml-3">
+                                            <h4 class="subject__title">Bangladesh Krishi Bank</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                        </div>
+                                    </div>
+                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                        <div class="subject__icon">3</div>
+                                        <div class="ml-3">
+                                            <h4 class="subject__title">Janata Bank Ltd</h4>
+                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- end::lessons section -->
-        </main>
+            </div>
+        </section>
+        <!-- end::lessons section -->
+    </main>
 
-        <footer
-            class="footer-section bg-gray-700 section-padding-t text-gray-400 text-sm"
-        >
-            <div class="container">
-                <div class="grid grid-cols-12 gap-y-6 md:gap-10">
-                    <div class="col-span-12 md:col-span-4">
-                        <img
-                            src="dist/img/logo-light.png"
-                            alt=""
-                            class="mb-5 max-w-[220px]"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Quisquam, quos.
-                        </p>
-                    </div>
-                    <div class="col-span-6 md:col-span-2">
-                        <h3 class="font-bold text-lg mb-4 text-gray-300">
-                            কোম্পানি
-                        </h3>
-                        <ul class="space-y-2">
-                            <li><a href="#">ক্যারিয়ার</a></li>
-                            <li><a href="#">প্রাইভেসি পলিসি</a></li>
-                            <li><a href="#">রিফান্ড পলিসি</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-span-6 md:col-span-2">
-                        <h3 class="font-bold text-lg mb-4 text-gray-300">
-                            অন্যান্য
-                        </h3>
-                        <ul class="space-y-2">
-                            <li><a href="#">ব্লগ</a></li>
-                            <li><a href="#">অ্যাফিলিয়েট হতে চাইলে</a></li>
-                            <li><a href="#">ক্র্যাশ কোর্স</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-span-12 md:col-span-4">
-                        <h3 class="font-bold text-lg mb-4 text-gray-300">
-                            যোগাযোগ মাধ্যম
-                        </h3>
+    <footer class="footer-section bg-gray-700 section-padding-t text-gray-400 text-sm">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-y-6 md:gap-10">
+                <div class="col-span-12 md:col-span-4">
+                    <img src="dist/img/logo-light.png" alt="" class="mb-5 max-w-[220px]" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quisquam, quos.
+                    </p>
+                </div>
+                <div class="col-span-6 md:col-span-2">
+                    <h3 class="font-bold text-lg mb-4 text-gray-300">
+                        কোম্পানি
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="#">ক্যারিয়ার</a></li>
+                        <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                        <li><a href="#">রিফান্ড পলিসি</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-6 md:col-span-2">
+                    <h3 class="font-bold text-lg mb-4 text-gray-300">
+                        অন্যান্য
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="#">ব্লগ</a></li>
+                        <li><a href="#">অ্যাফিলিয়েট হতে চাইলে</a></li>
+                        <li><a href="#">ক্র্যাশ কোর্স</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <h3 class="font-bold text-lg mb-4 text-gray-300">
+                        যোগাযোগ মাধ্যম
+                    </h3>
 
-                        <div>
-                            Contact: 16910 (8AM - 11PM) <br />
-                            Phone:
-                            <a href="tel:+880173035465">+880173035465</a> <br />
-                            Email:
-                            <a href="mailto:support@mathmenia.com"
-                                >support@mathmenia.com</a
-                            >
+                    <div>
+                        Contact: 16910 (8AM - 11PM) <br />
+                        Phone:
+                        <a href="tel:+880173035465">+880173035465</a> <br />
+                        Email:
+                        <a href="mailto:support@mathmenia.com">support@mathmenia.com</a>
 
-                            <div class="social-media mt-5">
-                                <a href="#" class="social-media__item">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-media__item">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-media__item">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="social-media__item">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
+                        <div class="social-media mt-5">
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-media__item">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="copyright bg-gray-800 py-4 mt-5 text-center px-5">
-                স্বত্ব © ২০১৫-২০২২ Mathmenia কতৃক সর্বস্বত্ব সংরক্ষিত
+        <div class="copyright bg-gray-800 py-4 mt-5 text-center px-5">
+            স্বত্ব © ২০১৫-২০২২ Mathmenia কতৃক সর্বস্বত্ব সংরক্ষিত
+        </div>
+    </footer>
+
+    <!-- start::search popup -->
+    <div class="search-popup">
+        <button type="button" class="button button--icon search-popup__close">
+            <i class="far fa-times"></i>
+        </button>
+        <form action="" method="get" class="search-popup__form">
+            <div class="nice-form flex-grow">
+                <input type="text" class="nice-form__input search-popup__input" placeholder="Search Here" />
+                <span class="nice-form__prepend">Search Here</span>
             </div>
-        </footer>
 
-        <!-- start::search popup -->
-        <div class="search-popup">
-            <button
-                type="button"
-                class="button button--icon search-popup__close"
-            >
-                <i class="far fa-times"></i>
+            <button type="submit" class="search-popup__button button button--icon border-transparent h-auto ml-3">
+                <i class="far fa-search"></i>
             </button>
-            <form action="" method="get" class="search-popup__form">
-                <div class="nice-form flex-grow">
-                    <input
-                        type="text"
-                        class="nice-form__input search-popup__input"
-                        placeholder="Search Here"
-                    />
-                    <span class="nice-form__prepend">Search Here</span>
+        </form>
+    </div>
+    <!-- end::search popup -->
+
+    <div class="mobile-menu">
+        <button type="button"
+            class="mobile-menu__close button button--icon rounded-full text-white bg-red-600 hover:bg-red-400">
+            <i class="far fa-times"></i>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="blog-details.html" class="mobile-menu__link">Blog</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="forum.html" class="mobile-menu__link">Forum</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="contact.html" class="mobile-menu__link">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- start::Year Modal -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+        id="yearModal" tabindex="-1" aria-labelledby="yearModalLabel" aria-hidden="true">
+        <div class="modal-dialog relative w-auto pointer-events-none">
+            <div
+                class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div
+                    class="modal-header flex flex-shrink-0 items-center justify-between px-4 py-2 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Select Year</h5>
+                    <button type="button"
+                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
-                <button
-                    type="submit"
-                    class="search-popup__button button button--icon border-transparent h-auto ml-3"
-                >
-                    <i class="far fa-search"></i>
-                </button>
-            </form>
+                <div class="modal-body relative p-4">
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2000</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2001</a> 
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2002</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2003</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2004</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2005</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2006</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2007</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2008</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2009</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">2010</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- end::search popup -->
+    </div>
+    <!-- end::Year Modal -->
 
-        <div class="mobile-menu">
-            <button
-                type="button"
-                class="mobile-menu__close button button--icon rounded-full text-white bg-red-600 hover:bg-red-400"
-            >
-                <i class="far fa-times"></i>
-            </button>
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Home</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="blog-details.html" class="mobile-menu__link">Blog</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="forum.html" class="mobile-menu__link">Forum</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="contact.html" class="mobile-menu__link">Contact</a>
-                </li>
-            </ul>
+    <!-- start::job Modal -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+        id="jobModal" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
+        <div class="modal-dialog relative w-auto pointer-events-none">
+            <div
+                class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div
+                    class="modal-header flex flex-shrink-0 items-center justify-between px-4 py-2 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Select Exam</h5>
+                    <button type="button"
+                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body relative p-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">Bangladesh Bank</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">Rupali Bank Ltd</a> 
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">Janata Bank Ltd</a>
+                        <a href="#" class="bg-gray-200 text-center px-4 py-2 rounded-lg font-bold hover:bg-primary hover:text-gray-50">Bangladesh Bank</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- end::job Modal -->
 
-        <div class="overlay"></div>
+    <div class="overlay"></div>
 
-        <!-- ALL JS -->
-        <script src="dist/js/jquery-3.5.1.min.js"></script>
-        <script src="dist/js/slick.min.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="dist/js/jquery.countdown.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-        <script src="dist/js/main.js"></script>
-    </body>
+    <!-- ALL JS -->
+    <script src="dist/js/jquery-3.5.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="dist/js/jquery.countdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
 </html>
