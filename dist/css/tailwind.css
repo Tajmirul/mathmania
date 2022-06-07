@@ -1497,6 +1497,10 @@ input[type='number'] {
   grid-column: span 6 / span 6;
 }
 
+.float-right {
+  float: right;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2090,6 +2094,10 @@ input[type='number'] {
   border-radius: 0px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -2391,6 +2399,11 @@ input[type='number'] {
 .px-\[var\(--input-padding-x\)\] {
   padding-left: var(--input-padding-x);
   padding-right: var(--input-padding-x);
+}
+
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .pb-4 {
