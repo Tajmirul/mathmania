@@ -104,7 +104,7 @@
     .theme-checkbox__checkmark {
         @apply h-[var(--box-size)] w-[var(--box-size)] relative bg-[#e2e2e2] rounded-md mr-2;
     }
-    .theme-checkbox__checkmark:after {
+    .theme-checkbox__checkmark::after {
         content: '';
         border: solid white;
         border-width: 0 2px 2px 0;
@@ -124,6 +124,16 @@
     .theme-checkbox__input:checked ~ .theme-checkbox__checkmark:after {
         @apply block;
     }
+    .theme-checkbox__input:disabled ~ .theme-checkbox__checkmark {
+        @apply opacity-[0.25];
+    }
+
+    .options.correct {
+        @apply text-green-500;
+    }
+    .options.wrong {
+        @apply text-red-500;
+    }
 
     /* start navbar */
     .navbar {
@@ -137,7 +147,7 @@
         @apply text-gray-800 hover:text-gray-600 px-3 py-1;
     }
     .mobile-menu {
-        @apply fixed top-0 right-0 w-full max-w-[300px] h-full z-[2] bg-white/90 translate-x-full transition-all;
+        @apply fixed top-0 right-0 w-full max-w-[240px] h-full z-[2] bg-white/90 translate-x-full transition-all;
     }
     .mobile-menu__close {
         @apply absolute top-3 right-[calc(100%+12px)] opacity-0 invisible transition-all;
@@ -229,7 +239,7 @@
 
     }
     .subject__item {
-        @apply flex items-center rounded-lg border-2 p-1 h-full cursor-pointer;
+        @apply flex items-center rounded-lg border-2 p-2 h-full cursor-pointer;
     }
     .subject__icon {
         @apply h-[70px] w-[70px] rounded-full flex items-center justify-center text-2xl bg-primary text-white shadow-lg;
@@ -301,6 +311,15 @@
     }
     .container-box--small {
         @apply max-w-[500px];
+    }
+
+    .explanation {}
+    .explanation__toggler {}
+    .explanation__content {
+        @apply hidden p-2 bg-[#f3f3f3] rounded text-sm;
+    }
+    .explanation__content.active {
+        @apply block;
     }
 }
 

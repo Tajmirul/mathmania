@@ -34,6 +34,7 @@
 </head>
 
 <body>
+
     <!-- <div class="go-to-top"><i class="icofont-rounded-up"></i></div> -->
     <!-- go to top button -->
     <div class="preloader"><img src="dist/img/loading.gif" alt=""></div>
@@ -70,41 +71,108 @@
     </header>
 
     <main>
-        <section class="section-padding">
+        <!-- start::quiz section -->
+        <section class="quiz-section section-padding">
             <div class="container">
-                <div class="max-w-[800px] mx-auto">
-                    <div class="flex items-center justify-between flex-col md:flex-row mb-5 border-b pb-4">
-                        <div class="space-x-3">
-                            <a href="#">All Post</a>
-                            <a href="#">My Post</a>
+                <div class="container-box">
+                    <div class="questions divide-y-[1px] divide-gray-300">
+                        <div class="question py-3">
+                            <a href="#" class="mb-5 text-md md:text-lg font-medium inline-block question">
+                                Question 2: 
+                                <span class="question__text">If you could live anywhere, where would it be?</span>
+                            </a>
+            
+                            <div class="space-y-3">
+                                <label class="theme-checkbox options">
+                                    <input type="radio" class="theme-checkbox__input" name="question_23_option">
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">Participatory Production</span>
+                                </label>
+                                <label class="theme-checkbox options wrong">
+                                    <input type="radio" class="theme-checkbox__input" name="question_23_option" checked>
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">social media reaches only a few people at a time</span>
+                                </label>
+                                <label class="theme-checkbox options correct">
+                                    <input type="radio" class="theme-checkbox__input" name="question_23_option">
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">The management structure of the companies</span>
+                                </label>
+                                <label class="theme-checkbox options">
+                                    <input type="radio" class="theme-checkbox__input" name="question_23_option">
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">traditional media offers no way for audiences to communicate with
+                                        media producers</span>
+                                </label>
+                            </div>
+
+                            <div class="tags space-x-1 mt-4">
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">সাধারণ বিজ্ঞান</a>
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">২০১৮ </a>
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">৩৯তম বিসিএস </a>
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">বিসিএস প্রিলি.</a>
+                            </div>
+                            
+                            <div class="explanation mt-4">
+                                <button type="button" class="explanation__toggler button py-2"><i class="far fa-expand mr-1 text-lg"></i> ব্যাখ্যা</button>
+                                <div class="explanation__content active">
+                                    Bangladesh Civil Service, more popularly known by its acronym BCS, is the civil service of Bangladesh. Civil service in the Indian subcontinent originated from the Imperial Civil Service which was the elite higher civil service of the British Empire in India during British rule in the period between 1858 and 1947.
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center border border-gray-400 rounded overflow-hidden">
-                            <i class="far fa-search pointer-events-none px-2"></i>
-                            <input type="text" class="border-0 outline-none px-2 py-1">
+
+                        <!-- related question -->
+                        <h4 class="text-2xl mt-5 py-5 bg-primary text-white text-center rounded-lg border-0">Related Questions</h4>
+
+                        <div class="question py-3">
+                            <a href="#" class="mb-5 text-md md:text-lg font-medium inline-block question">
+                                Question 3: 
+                                <span class="question__text">If you could live anywhere, where would it be?</span>
+                            </a>
+            
+                            <div class="space-y-3">
+                                <label class="theme-checkbox options">
+                                    <input type="radio" class="theme-checkbox__input" name="question_3_option">
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">Participatory Production</span>
+                                </label>
+                                <label class="theme-checkbox options wrong">
+                                    <input type="radio" class="theme-checkbox__input" name="question_3_option" checked>
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">social media reaches only a few people at a time</span>
+                                </label>
+                                <label class="theme-checkbox options correct">
+                                    <input type="radio" class="theme-checkbox__input" name="question_3_option">
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">The management structure of the companies</span>
+                                </label>
+                                <label class="theme-checkbox options">
+                                    <input type="radio" class="theme-checkbox__input" name="question_3_option">
+                                    <span class="theme-checkbox__checkmark"></span>
+                                    <span class="theme-checkbox__text">traditional media offers no way for audiences to communicate with
+                                        media producers</span>
+                                </label>
+                            </div>
+
+                            <div class="tags space-x-1 mt-4">
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">সাধারণ বিজ্ঞান</a>
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">২০১৮ </a>
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">৩৯তম বিসিএস </a>
+                                <a href="#" class="tag px-2 py-1 bg-primary text-white rounded inline-block text-sm">বিসিএস প্রিলি.</a>
+                            </div>
+                            
+                            <div class="explanation mt-4">
+                                <button type="button" class="explanation__toggler button py-2"><i class="far fa-expand mr-1 text-lg"></i> ব্যাখ্যা</button>
+                                <div class="explanation__content active">
+                                    Bangladesh Civil Service, more popularly known by its acronym BCS, is the civil service of Bangladesh. Civil service in the Indian subcontinent originated from the Imperial Civil Service which was the elite higher civil service of the British Empire in India during British rule in the period between 1858 and 1947.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <form action="" class="space-y-3">
-                        <div class="nice-form max-w-[300px]">
-                            <select name="" id="" class="nice-form__input">
-                                <option value="">Education Forum</option>
-                            </select>
-                            <label class="nice-form__prepend">Education Forum</label>
-                        </div>
-                        <div class="nice-form">
-                            <input type="text" class="nice-form__input" name="" placeholder="Title">
-                            <label class="nice-form__prepend">Title</label>
-                        </div>
-                        <div>
-                            <textarea name="" id="" rows="7" class="nice-form__input"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="button button--primary">Publish</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
+        <!-- end::quiz section -->
     </main>
 
     <footer class="footer-section bg-gray-700 section-padding-t text-gray-400 text-sm">
@@ -181,9 +249,7 @@
     <!-- end::search popup -->
 
     <div class="mobile-menu">
-        <button type="button"
-            class="mobile-menu__close button button--icon rounded-full text-white bg-red-600 hover:bg-red-400"><i
-                class="far fa-times"></i></button>
+        <button type="button" class="mobile-menu__close button button--icon rounded-full text-white bg-red-600 hover:bg-red-400"><i class="far fa-times"></i></button>
         <ul class="mobile-menu__list">
             <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
             <li class="mobile-menu__item"><a href="blog-details.html" class="mobile-menu__link">Blog</a></li>

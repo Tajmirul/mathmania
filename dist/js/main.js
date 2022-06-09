@@ -13,42 +13,6 @@ $(document).ready(function () {
     //         type: 'iframe'
     //     });
 
-    // count down
-    // jquery count down
-    // $.each($('.jquery-countdown'), function (index, value) {
-    //     // date format MM/DD/YYYY hh:mm:ss
-    //     const htmlTemplate = `
-    //         <div class="counter__item">
-    //             <div class="counter__item--number">%H</div>
-    //             <div class="counter__item--text">Hour</div>
-    //         </div>
-    //         <div class="counter__item">
-    //             <div class="counter__item--number">%M</div>
-    //             <div class="counter__item--text">Minute</div>
-    //         </div>
-    //         <div class="counter__item">
-    //             <div class="counter__item--number">%S</div>
-    //             <div class="counter__item--text">Second</div>
-    //         </div>
-    // 	`;
-
-    //     const date = $(this).data('date');
-    //     const counter = $(this).countdown(date, function (event) {
-    //         $(this).html(event.strftime(htmlTemplate));
-    //     });
-    //     counter.on('finish.countdown', () => {
-    //         $('.options input, .question-buttons button').attr("disabled", true);
-    //         // Swal.fire({
-    //         //     title: 'Time is up!',
-    //         //     icon: 'info',
-    //         //     showConfirmButton: false,
-    //         // });
-    //         setTimeout(() => {
-    //             // location.replace('result.html');
-    //         }, 5000);
-    //     });
-    // });
-
     // load uploaded image
     // $('.image-upload__input[type=file]').change(function (event) {
     //     const file = event.target.files[0];
@@ -67,7 +31,6 @@ $(document).ready(function () {
     //     });
 
     // WOW active
-    //     new WOW().init();
 
     // slick slider for banner 
     // $('.banner-slider').slick({
@@ -126,6 +89,20 @@ $(document).ready(function () {
     //         $(this).parent().find('>ul').slideToggle()
     //     });
 
+    // disable other option of a question when an option is selected
+    $('.question .options input').on('change', function(e) {
+        const $otherOptions = $(this).parents('.question').find('.options input:not(:checked)');
+        $otherOptions.each((index, item) => item.disabled = true);
+    })
+    $('.question .options input:checked').change();
+
+    // toggle question explanation
+    $('.explanation__toggler').on('click', function() {
+        $(this).parents('.explanation').find('.explanation__content').stop().slideToggle();
+    });
+
+
+
     // exam time counter
     $.each($('.jquery-countdown'), function (index, value) {
         // date format MM/DD/YYYY hh:mm:ss
@@ -149,7 +126,7 @@ $(document).ready(function () {
             $(this).html(event.strftime(htmlTemplate));
         });
         counter.on('finish.countdown', () => {
-            // $('.options input, .question-buttons button').attr("disabled", true);
+            $('.options input, .question-buttons button').attr("disabled", true);
             Swal.fire({
                 title: 'Time is up!',
                 icon: 'info',
