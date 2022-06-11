@@ -102,31 +102,31 @@
         <section class="blogs-section section-padding">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৪৪তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৪৩তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৪২তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৪১তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৪০তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৩৩তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
-                    <a href="#" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
+                    <a href="quiz.html" class="border rounded text-lg px-5 py-2 flex items-center justify-between hover:bg-gray-100">
                         ৩২তম বিসিএস প্রিলিমিনারি টেস্ট 
                         <span class="text-sm rounded-xl py-[2px] px-2 bg-primary text-white">200</span>
                     </a>
@@ -204,16 +204,21 @@
 
     <!-- start::search popup -->
     <div class="search-popup">
-        <button type="button" class="button button--icon search-popup__close">
-            <i class="far fa-times"></i>
-        </button>
+        <button type="button" class="button button--icon search-popup__close"><i class="far fa-times"></i></button>
         <form action="search-result.html" method="get" class="search-popup__form">
+            <div class="nice-form">
+                <select class="nice-form__input text-sm sm:text-base pr-0 px-2 rounded-r-none">
+                    <option value="">Blog Posts</option>
+                    <option value="">Forum Posts</option>
+                    <option value="">Questions</option>
+                </select>
+                <span class="nice-form__prepend">Search In</span>
+            </div>
             <div class="nice-form flex-grow">
-                <input type="text" class="nice-form__input search-popup__input" placeholder="Search Here" />
-                <span class="nice-form__prepend">Search Here</span>
+                <input type="text" class="nice-form__input text-sm sm:text-base search-popup__input pl-2 border-l-0 rounded-l-none" placeholder="Search Here">
             </div>
 
-            <button type="submit" class="search-popup__button button button--icon border-transparent h-auto ml-3">
+            <button type="submit" class="search-popup__button button button--icon border-transparent hidden md:block h-auto ml-3">
                 <i class="far fa-search"></i>
             </button>
         </form>

@@ -89,6 +89,10 @@
     .nice-form.error .nice-form__prepend {
         @apply text-red-500;
     }
+    .nice-form.small {
+        --input-padding-x: 16px;
+        --input-padding-y: 8px;
+    }
     .toggle-password {
         @apply absolute right-[10px] top-[50%] transform translate-y-[-50%] left-auto z-[3] text-[20px] mt-[0] float-none;
     }
@@ -275,7 +279,7 @@
         @apply bg-slate-100/[98] fixed top-0 left-0 right-0 bottom-0 z-[2] overflow-auto flex items-center justify-center opacity-0 invisible transition;
     }
     .search-popup__form {
-        @apply flex max-w-[410px] p-5 w-full;
+        @apply flex max-w-[480px] p-5 w-full;
     }
     .search-popup__input {
         /* @apply ; */
@@ -301,7 +305,7 @@
         @apply text-base text-[#333] bg-[#fff] p-[2px];
     }
     .counter__item--text {
-        @apply text-xs bg-indigo-700 text-white font-medium p-[2px];
+        @apply text-xs bg-primary text-white font-medium p-[2px];
     }
     /* end time counter */
 

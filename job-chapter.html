@@ -106,146 +106,84 @@
         <!-- start::lessons section -->
         <section class="lessons-section section-padding">
             <div class="container">
-                <div class="grid grid-cols-12 gap-3 md:gap-6">
-                    <div class="col-span-12 md:col-span-4 space-y-4">
-                        <div class="subject__item p-3 h-auto active">
-                            <div class="subject__icon">1</div>
-                            <div class="ml-3">
-                                <h4 class="subject__title">
-                                    প্রাচীন যুগ - ২
-                                </h4>
-                                <div class="subject__text">
-                                    মোট প্রশ্ন - ১৪৫
+                <ul class="nav nav-tabs flex flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
+                    id="tabs-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a href="#tabs-exam-based"
+                            class="nav-link block font-medium leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active"
+                            id="tabs-exam-based-tab" data-bs-toggle="pill" data-bs-target="#tabs-exam-based"
+                            role="tab" aria-controls="tabs-exam-based" aria-selected="true">পরীক্ষা ভিত্তিক</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#tabs-year-based"
+                            class="nav-link block font-medium leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+                            id="tabs-year-based-tab" data-bs-toggle="pill" data-bs-target="#tabs-year-based"
+                            role="tab" aria-controls="tabs-year-based" aria-selected="false">সাল ভিত্তিক </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="tabs-tabContent">
+                    <div class="tab-pane fade show active" id="tabs-exam-based" role="tabpanel"
+                        aria-labelledby="tabs-exam-based-tab">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                <div class="subject__icon">1</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Bangladesh Krishi Bank</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="subject__item p-3 h-auto">
-                            <div class="subject__icon">2</div>
-                            <div class="ml-3">
-                                <h4 class="subject__title">
-                                    প্রাচীন যুগ - ২
-                                </h4>
-                                <div class="subject__text">
-                                    মোট প্রশ্ন - ১৪৫
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                <div class="subject__icon">2</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Rupali Bank Ltd</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="subject__item p-3 h-auto">
-                            <div class="subject__icon">3</div>
-                            <div class="ml-3">
-                                <h4 class="subject__title">
-                                    প্রাচীন যুগ - ২
-                                </h4>
-                                <div class="subject__text">
-                                    মোট প্রশ্ন - ১৪৫
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                <div class="subject__icon">3</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Janata Bank Ltd</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="subject__item p-3 h-auto">
-                            <div class="subject__icon">4</div>
-                            <div class="ml-3">
-                                <h4 class="subject__title">
-                                    প্রাচীন যুগ - ২
-                                </h4>
-                                <div class="subject__text">
-                                    মোট প্রশ্ন - ১৪৫
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subject__item p-3 h-auto">
-                            <div class="subject__icon">5</div>
-                            <div class="ml-3">
-                                <h4 class="subject__title">
-                                    প্রাচীন যুগ - ২
-                                </h4>
-                                <div class="subject__text">
-                                    মোট প্রশ্ন - ১৪৫
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
+                                <div class="subject__icon">4</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Bangladesh Bank</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-span-12 md:col-span-8">
-                        <ul class="nav nav-tabs flex flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
-                            id="tabs-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a href="#tabs-exam-based"
-                                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active"
-                                    id="tabs-exam-based-tab" data-bs-toggle="pill" data-bs-target="#tabs-exam-based"
-                                    role="tab" aria-controls="tabs-exam-based" aria-selected="true">পরীক্ষা ভিত্তিক</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="#tabs-year-based"
-                                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
-                                    id="tabs-year-based-tab" data-bs-toggle="pill" data-bs-target="#tabs-year-based"
-                                    role="tab" aria-controls="tabs-year-based" aria-selected="false">সাল ভিত্তিক </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="tabs-tabContent">
-                            <div class="tab-pane fade show active" id="tabs-exam-based" role="tabpanel"
-                                aria-labelledby="tabs-exam-based-tab">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
-                                        <div class="subject__icon">1</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Bangladesh Krishi Bank</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
-                                        <div class="subject__icon">2</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Rupali Bank Ltd</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
-                                        <div class="subject__icon">3</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Janata Bank Ltd</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#jobModal">
-                                        <div class="subject__icon">4</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Bangladesh Bank</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
+                    <div class="tab-pane fade" id="tabs-year-based" role="tabpanel"
+                        aria-labelledby="tabs-year-based-tab">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
+                                <div class="subject__icon">4</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Bangladesh Bank</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tabs-year-based" role="tabpanel"
-                                aria-labelledby="tabs-year-based-tab">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
-                                        <div class="subject__icon">4</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Bangladesh Bank</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
-                                        <div class="subject__icon">2</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Rupali Bank Ltd</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
-                                        <div class="subject__icon">1</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Bangladesh Krishi Bank</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
-                                    <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
-                                        <div class="subject__icon">3</div>
-                                        <div class="ml-3">
-                                            <h4 class="subject__title">Janata Bank Ltd</h4>
-                                            <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
-                                        </div>
-                                    </div>
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
+                                <div class="subject__icon">2</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Rupali Bank Ltd</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                </div>
+                            </div>
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
+                                <div class="subject__icon">1</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Bangladesh Krishi Bank</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
+                                </div>
+                            </div>
+                            <div class="subject__item p-3 h-auto" data-bs-toggle="modal" data-bs-target="#yearModal">
+                                <div class="subject__icon">3</div>
+                                <div class="ml-3">
+                                    <h4 class="subject__title">Janata Bank Ltd</h4>
+                                    <div class="subject__text">মােট প্রশ্ন 1355 টি</div>
                                 </div>
                             </div>
                         </div>
@@ -324,16 +262,21 @@
 
     <!-- start::search popup -->
     <div class="search-popup">
-        <button type="button" class="button button--icon search-popup__close">
-            <i class="far fa-times"></i>
-        </button>
+        <button type="button" class="button button--icon search-popup__close"><i class="far fa-times"></i></button>
         <form action="search-result.html" method="get" class="search-popup__form">
+            <div class="nice-form">
+                <select class="nice-form__input text-sm sm:text-base pr-0 px-2 rounded-r-none">
+                    <option value="">Blog Posts</option>
+                    <option value="">Forum Posts</option>
+                    <option value="">Questions</option>
+                </select>
+                <span class="nice-form__prepend">Search In</span>
+            </div>
             <div class="nice-form flex-grow">
-                <input type="text" class="nice-form__input search-popup__input" placeholder="Search Here" />
-                <span class="nice-form__prepend">Search Here</span>
+                <input type="text" class="nice-form__input text-sm sm:text-base search-popup__input pl-2 border-l-0 rounded-l-none" placeholder="Search Here">
             </div>
 
-            <button type="submit" class="search-popup__button button button--icon border-transparent h-auto ml-3">
+            <button type="submit" class="search-popup__button button button--icon border-transparent hidden md:block h-auto ml-3">
                 <i class="far fa-search"></i>
             </button>
         </form>
